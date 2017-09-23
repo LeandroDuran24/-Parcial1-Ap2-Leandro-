@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace _Parcial1_Ap2_Leandro_.UI.Reportes {
+namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
     
     
     /// <summary>
@@ -690,7 +690,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Reportes {
         }
     }
 }
-namespace _Parcial1_Ap2_Leandro_.UI.Reportes.DataSetTableAdapters {
+namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
     
     
     /// <summary>

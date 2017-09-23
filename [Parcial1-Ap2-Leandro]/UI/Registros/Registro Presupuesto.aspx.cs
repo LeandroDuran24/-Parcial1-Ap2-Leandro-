@@ -41,7 +41,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
 
         public Presupuesto LLenar()
         {
-           // prestamo.PresupuestoId = Convert.ToInt32(IdTextBox.Text);
+            presupuesto.PresupuestoId = Convert.ToInt32(IdTextBox.Text);
             presupuesto.Descripcion = DescripcionTextBox1.Text;
             presupuesto.Fecha = Convert.ToDateTime(FechaTextBox1.Text);
             presupuesto.Monto = Convert.ToDouble(MontoTextBox1.Text);
@@ -57,9 +57,12 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
         {
             
             presupuesto = LLenar();
+             Convert.ToInt32(IdTextBox.Text);
 
-            if(presupuesto.PresupuestoId!=0)
+
+            if (presupuesto.PresupuestoId!=0)
             {
+                
                 BLL.PresupuestoBLL.Mofidicar(presupuesto);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Modificado !');</script> ");
             }

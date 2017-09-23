@@ -81,7 +81,7 @@
             </div>
 
             <div class="text-center">
-                <asp:TextBox ID="DescripcionTextBox1" runat="server" Height="66px" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="DescripcionTextBox1" runat="server" Height="66px" Width="200px" TextMode="MultiLine"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DescripcionTextBox1" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
             </div>
 
