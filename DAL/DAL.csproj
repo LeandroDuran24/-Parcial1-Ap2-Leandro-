@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A1A8F40D-BD71-433C-A800-A9B68FBA73B2}</ProjectGuid>
+    <ProjectGuid>{0848F7DC-F56A-4F16-AEAF-9C1D524BDB36}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_Parcial1_Ap2_Leandro_</RootNamespace>
-    <AssemblyName>[Parcial1-Ap2-Leandro]</AssemblyName>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -106,7 +106,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Base de Datos\Script.txt" />
     <Content Include="Global.asax" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
@@ -124,6 +123,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base de Datos.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -131,15 +131,6 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UI\Consultas\" />
-    <Folder Include="UI\Registros\" />
-    <Folder Include="UI\Reportes\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{0848f7dc-f56a-4f16-aeaf-9c1d524bdb36}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{ac74a9b2-9129-4536-b6e0-0a8b21c728b1}</Project>
       <Name>Entidades</Name>
@@ -158,9 +149,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53619</DevelopmentServerPort>
+          <DevelopmentServerPort>53666</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53619/</IISUrl>
+          <IISUrl>http://localhost:53666/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
