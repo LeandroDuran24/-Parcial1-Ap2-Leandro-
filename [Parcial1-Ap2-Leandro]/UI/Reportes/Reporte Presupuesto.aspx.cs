@@ -16,7 +16,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Reportes
             ReportViewer1.LocalReport.ReportPath = Server.MapPath(@"Presupuesto.rdlc");
             ReportViewer1.LocalReport.DataSources.Clear();
 
-            ReportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WebForms.ReportDataSource("DataSetPrestamo",
+            ReportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WebForms.ReportDataSource("DataSetPresupuesto",
                Consultas.Consulta_de_Prestamos.lista));
 
             ReportViewer1.LocalReport.Refresh();

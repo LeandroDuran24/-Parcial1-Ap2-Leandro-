@@ -6,9 +6,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Reporte de Presupuesto</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 985px;
+            height: 545px;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="auto-style1">
         
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>

@@ -12,6 +12,11 @@
 
 
     <title>Registro de Prestamos</title>
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 320px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -23,14 +28,14 @@
                 <div class="container-fluid">
 
                     <ul class="nav navbar-nav">
-                        <li ><a href="Menu.aspx"><span class="glyphicon glyphicon-home">Inicio&nbsp</span></a></li>
+                        <li><a href="Menu.aspx"><span class="glyphicon glyphicon-home">Inicio&nbsp</span></a></li>
                         <li class="active"><a href="Registro Presupuesto.aspx"><span class="glyphicon glyphicon-usd">Registro de Prestamos&nbsp</span></a></li>
                         <li><a href="../Consultas/Consulta de Presupuesto.aspx"><span class="glyphicon glyphicon-search">Consulta de Prestamos</span></a></li>
                         &nbsp&nbsp&nbsp
 
                    <ul />
                 </div>
-                
+
             </nav>
             <h1 class="text-center page-header">Registro de Prestamos<span class="glyphicon glyphicon-usd"></span></h1>
 
@@ -46,7 +51,7 @@
             </div>
 
             <div class="text-center">
-                <asp:TextBox ID="IdTextBox" runat="server" Height="27px" Width="89px" ></asp:TextBox>&nbsp
+                <asp:TextBox ID="IdTextBox" runat="server" Height="27px" Width="89px"></asp:TextBox>&nbsp
                 <asp:Button ID="BuscarButton" CssClass="boton-buscar" runat="server" Text="Buscar" ValidationGroup="buscar" OnClick="BuscarButton_Click" />
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="IdTextBox" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" ValidationGroup="buscar"></asp:RequiredFieldValidator>
             </div>
@@ -61,7 +66,7 @@
             </div>
 
             <div class="text-center">
-                <asp:TextBox ID="FechaTextBox1" runat="server" Height="27px" Width="200px" ></asp:TextBox>
+                <asp:TextBox ID="FechaTextBox1" runat="server" Height="27px" Width="200px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="FechaTextBox1" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
             </div>
 
@@ -76,7 +81,7 @@
             </div>
 
             <div class="text-center">
-                <asp:TextBox ID="DescripcionTextBox1" runat="server" Height="66px" Width="200px" ></asp:TextBox>
+                <asp:TextBox ID="DescripcionTextBox1" runat="server" Height="66px" Width="200px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DescripcionTextBox1" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
             </div>
 
@@ -84,21 +89,26 @@
 
             <div class="text-center">
                 <div class="label">
-                    <asp:Label ID="Label4" runat="server" Text="Monto" ></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="Monto"></asp:Label>
 
                 </div>
             </div>
 
             <div class="text-center">
-                <asp:TextBox ID="MontoTextBox1" runat="server" Height="27px" Width="200px"  ></asp:TextBox>
+                <asp:TextBox ID="MontoTextBox1" runat="server" Height="27px" Width="200px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="MontoTextBox1" ErrorMessage="*" Font-Bold="True" Font-Size="X-Large" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
             </div>
 
+            <p class=" text-center">
+
             <br />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1"  ValidationExpression="\d+" ValidationGroup="guardar"  runat="server" ErrorMessage="Solo Numeros #" ControlToValidate="MontoTextBox1" Font-Bold="True" ForeColor="Red"></asp:RegularExpressionValidator>
             <br />
+            </p>
             <div class="text-center">
                 <asp:Button ID="NuevoButton2" CssClass="btn btn-primary btn-md boton" runat="server" Text="Nuevo" OnClick="NuevoButton2_Click" />&nbsp&nbsp
-                   <asp:Button ID="GuardarButton" CssClass="btn btn-primary btn-md boton" runat="server" Text="Guardar" ValidationGroup="guardar" OnClick="GuardarButton_Click" /> &nbsp&nbsp
+                   <asp:Button ID="GuardarButton" CssClass="btn btn-primary btn-md boton" runat="server" Text="Guardar" ValidationGroup="guardar" OnClick="GuardarButton_Click" />
+                &nbsp&nbsp
                     <asp:Button ID="Eliminar" CssClass="btn btn-primary btn-md boton" runat="server" Text="Eliminar" OnClick="Eliminar_Click" />
             </div>
             <br />
@@ -107,10 +117,10 @@
             <br />
 
             <footer>
-                 <p class="page-footer text-center">[Parcial 1 Aplicada 2 Leandro Rafael]</p>
+                <p class="page-footer text-center">[Parcial 1 Aplicada 2 Leandro Rafael]</p>
             </footer>
 
-       </div>
+        </div>
 
 
     </form>

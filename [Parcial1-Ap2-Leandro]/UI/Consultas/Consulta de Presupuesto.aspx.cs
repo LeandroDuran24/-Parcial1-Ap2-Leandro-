@@ -16,6 +16,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
             Presupuesto presupuesto = new Presupuesto();
            
             lista = BLL.PresupuestoBLL.GetListTodo();
+            GridView1.DataSource = BLL.PresupuestoBLL.GetListTodo();
+            GridView1.DataBind();
         }
 
         public void SeleccionarItem()
@@ -30,11 +32,12 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
             
             else if (DropDownListPresupuesto.SelectedIndex == 1)
             {
-                DateTime desde = Convert.ToDateTime(desdeFecha.Text);
-                DateTime hasta = Convert.ToDateTime(desdeFecha.Text);
+                
 
                 if (desdeFecha.Text != "" && hastaFecha.Text != "")
                 {
+                    DateTime desde = Convert.ToDateTime(desdeFecha.Text);
+                    DateTime hasta = Convert.ToDateTime(hastaFecha.Text);
                     if (desde <= hasta)
                     {
                         lista = BLL.PresupuestoBLL.GetList(p => p.Fecha >= desde && p.Fecha <= hasta);
@@ -44,6 +47,10 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
                     else
                     {
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('La Primera Fecha debe ser Menor a la Segunda Fecha');</script>");
+                        desdeFecha.Text = "";
+                        hastaFecha.Text = "";
+                        GridView1.DataSource = BLL.PresupuestoBLL.GetListTodo();
+                        GridView1.DataBind();
                     }
                 }
                 else

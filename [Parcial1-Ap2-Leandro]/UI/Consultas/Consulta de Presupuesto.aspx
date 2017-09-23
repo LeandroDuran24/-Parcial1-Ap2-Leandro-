@@ -25,14 +25,14 @@
                 <div class="container-fluid">
 
                     <ul class="nav navbar-nav">
-                        <li ><a href="../Registros/Menu.aspx"><span class="glyphicon glyphicon-home">Inicio&nbsp</span></a></li>
+                        <li><a href="../Registros/Menu.aspx"><span class="glyphicon glyphicon-home">Inicio&nbsp</span></a></li>
                         <li><a href="../Registros/Registro Presupuesto.aspx"><span class="glyphicon glyphicon-usd">Registro de Prestamos&nbsp</span></a></li>
                         <li class="active"><a href="Consulta de Presupuesto.aspx"><span class="glyphicon glyphicon-search">Consulta de Prestamos</span></a></li>
                         &nbsp&nbsp&nbsp
 
                    <ul />
                 </div>
-                
+
             </nav>
             <h1 class="text-center page-header">Consulta de Presupuestos<span class="glyphicon glyphicon-usd"></span></h1>
 
@@ -57,7 +57,7 @@
 
                     <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
                     <asp:Button ID="ButtonBuscar" CssClass="boton-buscar" runat="server" Text="Filtrar" OnClick="ButtonBuscar_Click" />
-                      
+
                 </div>
 
                 <!--fecha-->
@@ -67,7 +67,7 @@
                         &nbsp;<asp:TextBox ID="desdeFecha" runat="server" Width="120px"></asp:TextBox>
                         <label for="hasta">Hasta</label>
                         <asp:TextBox ID="hastaFecha" runat="server" Width="120px"></asp:TextBox>
-                        <a id="Reporte" href="../Reportes/Reporte Presupuesto.aspx" class="boton-buscar" >Imprimir</a>
+                        <a id="Reporte" href="../Reportes/Reporte Presupuesto.aspx" class="boton-buscar">Imprimir</a>
 
                     </p>
 
@@ -77,15 +77,23 @@
         </div>
 
 
-        
-            <br />
-            <br />
-            <br />
+
+        <br />
+        <br />
+        <br />
         <div class="text-center">
-            <asp:GridView ID="GridView1" CssClass="text-center" runat="server" CaptionAlign="Bottom" HorizontalAlign="Center" Height="112px" Width="242px">
-                <HeaderStyle BackColor="#0066FF" BorderColor="Black" BorderStyle="Double" />
-                <PagerStyle BackColor="White" BorderColor="White" BorderStyle="Double" />
-                <RowStyle BackColor="White" BorderColor="Black" BorderStyle="Double" Font-Italic="True" ForeColor="Black" />
+            <asp:GridView ID="GridView1" CssClass="text-center" runat="server" CaptionAlign="Bottom" HorizontalAlign="Center" Height="18px" Width="510px" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <AlternatingRowStyle BackColor="White" />
+                <EditRowStyle BackColor="#2461BF" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" BorderColor="Black" BorderStyle="Double" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#2461BF" BorderColor="White" BorderStyle="Double" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EFF3FB" BorderColor="Black" BorderStyle="Double" />
+                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
         </div>
 
@@ -96,7 +104,7 @@
         <br />
         <footer>
 
-            <p class="page-footer text-center">[Parcial 1 Aplicada 2 Leandro Rafael]</p>
+            <p class="page-footer text-center "  >[Parcial 1 Aplicada 2 Leandro Rafael]</p>
 
         </footer>
 
