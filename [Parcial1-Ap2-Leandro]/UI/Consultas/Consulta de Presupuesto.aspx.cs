@@ -20,7 +20,6 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
             lista = BLL.PresupuestoBLL.GetListTodo();
             GridView1.DataSource = BLL.PresupuestoBLL.GetListTodo();
             GridView1.DataBind();
-          
         }
 
         //funcion en donde dependiendo del items que seleccione hace su funcion por el filtro requerido
