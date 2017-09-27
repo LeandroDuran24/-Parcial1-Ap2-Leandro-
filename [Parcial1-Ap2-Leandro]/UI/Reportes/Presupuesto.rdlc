@@ -329,8 +329,16 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+                              <Value xml:space="preserve"> </Value>
+                              <Style>
+                                <Format>'$'#,0.00;('$'#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
                               <Value>=Fields!Monto.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>'$'#,0.00;('$'#,0.00)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -344,24 +352,14 @@
                           <Color>White</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <TopBorder>
-                          <Color>White</Color>
-                        </TopBorder>
-                        <BottomBorder>
-                          <Color>White</Color>
-                        </BottomBorder>
-                        <LeftBorder>
-                          <Color>White</Color>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>White</Color>
-                        </RightBorder>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>es-DO</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>

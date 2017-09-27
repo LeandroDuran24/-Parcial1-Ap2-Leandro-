@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Web.UI;
 
 namespace _Parcial1_Ap2_Leandro_
 {
@@ -11,6 +12,7 @@ namespace _Parcial1_Ap2_Leandro_
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.WebForms;
         }
     }
 }
