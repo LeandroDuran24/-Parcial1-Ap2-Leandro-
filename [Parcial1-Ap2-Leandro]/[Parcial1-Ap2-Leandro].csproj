@@ -106,15 +106,15 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Content Include="UI\Registros\Reportes\DataSet.xsc">
+    <Content Include="UI\Reportes\DataSet.xsc">
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Content>
-    <None Include="UI\Registros\Reportes\DataSet.xsd">
+    <None Include="UI\Reportes\DataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
     </None>
-    <Content Include="UI\Registros\Reportes\DataSet.xss">
+    <Content Include="UI\Reportes\DataSet.xss">
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
@@ -132,7 +132,7 @@
     <Content Include="UI\CSS\MyStyle.css" />
     <Content Include="UI\Registros\Menu.aspx" />
     <Content Include="UI\Registros\Registro Presupuesto.aspx" />
-    <Content Include="UI\Registros\Reportes\Reporte Presupuesto.aspx" />
+    <Content Include="UI\Reportes\Reporte Presupuesto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -166,21 +166,22 @@
     <Compile Include="UI\Registros\Registro Presupuesto.aspx.designer.cs">
       <DependentUpon>Registro Presupuesto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Registros\Reportes\DataSet.Designer.cs">
+    <Compile Include="UI\Reportes\DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UI\Registros\Reportes\Reporte Presupuesto.aspx.cs">
+    <Compile Include="UI\Reportes\Reporte Presupuesto.aspx.cs">
       <DependentUpon>Reporte Presupuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Registros\Reportes\Reporte Presupuesto.aspx.designer.cs">
+    <Compile Include="UI\Reportes\Reporte Presupuesto.aspx.designer.cs">
       <DependentUpon>Reporte Presupuesto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utilidades.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UI\Registros\Reportes\Presupuesto.rdlc" />
+    <EmbeddedResource Include="UI\Reportes\Presupuesto.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

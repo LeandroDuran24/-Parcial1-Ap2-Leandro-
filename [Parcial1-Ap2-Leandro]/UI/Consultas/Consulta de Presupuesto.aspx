@@ -19,7 +19,7 @@
 
 
         <header>
-
+            <!--menu principal-->
             <nav class=" navbar navbar-default">
 
                 <div class="container-fluid">
@@ -43,7 +43,7 @@
         <div class="container-fluid">
             <div class="col-lg-12 col-md-6  col-sm-8 col-xs-12">
 
-                <!--comboBox-->
+                <!--comboBox con diferentes opciones a seleccionar-->
                 <div class="text-center">
                     <label for="Busqueda:">Busqueda</label>
 
@@ -54,8 +54,8 @@
                     </asp:DropDownList>
                     &nbsp
 
-
-                    <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
+                    <!--boton buscar-->
+                    <asp:TextBox ID="TextBox1" runat="server" Width="150px" MaxLength="50"></asp:TextBox>
                     <asp:Button ID="ButtonBuscar" CssClass="boton-buscar" runat="server" Text="Filtrar" OnClick="ButtonBuscar_Click" />
 
                 </div>
@@ -64,9 +64,10 @@
                 <div class="text-center">
                     <p>
                         <label for="Desde:">Desde </label>
-                        &nbsp;<asp:TextBox ID="desdeFecha" runat="server" Width="120px"></asp:TextBox>
+                        &nbsp;<asp:TextBox ID="desdeFecha" runat="server" Width="120px" MaxLength="15"></asp:TextBox>
                         <label for="hasta">Hasta</label>
-                        <asp:TextBox ID="hastaFecha" runat="server" Width="120px"></asp:TextBox>
+                        <asp:TextBox ID="hastaFecha" runat="server" Width="120px" MaxLength="15"></asp:TextBox>
+                        <!--boton Imprimir Reporte-->
                         <a id="Reporte" href="../Reportes/Reporte Presupuesto.aspx" class="boton-buscar">Imprimir</a>
 
                     </p>
@@ -81,6 +82,7 @@
         <br />
         <br />
         <br />
+        <!--tabla donde se va mostrar el contenido filtrado-->
         <div class="text-center">
             <asp:GridView ID="GridView1" CssClass="text-center" runat="server" CaptionAlign="Bottom" HorizontalAlign="Center" Height="18px" Width="510px" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
@@ -102,9 +104,11 @@
         <br />
         <br />
         <br />
+
+        <!--footer-->
         <footer>
 
-            <p class="page-footer text-center "  >[Parcial 1 Aplicada 2 Leandro Rafael]</p>
+            <p class="page-footer text-center " >[Parcial 1 Aplicada 2 Leandro Rafael]</p>
 
         </footer>
 

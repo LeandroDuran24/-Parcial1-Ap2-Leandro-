@@ -25,6 +25,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             ScriptManager.ScriptResourceMapping.AddDefinition("jquery", null, myScriptResDef);
         }
 
+        //funcion para limpiar todos los textbox del formulario
         public void LimpiarTextBox()
         {
             IdTextBox.Text = "";
@@ -35,13 +36,16 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             RequiredFieldValidator2.Text = "";
             RequiredFieldValidator3.Text = "";
             RequiredFieldValidator4.Text = "";
+            FechaTextBox1.Focus();
 
 
         }
 
+        //funcion para crear una instancia con los campos de los textbox 
+
         public Presupuesto LLenar()
         {
-            presupuesto.PresupuestoId = Convert.ToInt32(IdTextBox.Text);
+            presupuesto.PresupuestoId = Utilidades.TOINT(IdTextBox.Text);
             presupuesto.Descripcion = DescripcionTextBox1.Text;
             presupuesto.Fecha = Convert.ToDateTime(FechaTextBox1.Text);
             presupuesto.Monto = Convert.ToDouble(MontoTextBox1.Text);
@@ -55,11 +59,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
 
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
-            
+
             presupuesto = LLenar();
-             Convert.ToInt32(IdTextBox.Text);
-
-
             if (presupuesto.PresupuestoId!=0)
             {
                 
@@ -68,10 +69,11 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             }
             else
             {
+               
                 BLL.PresupuestoBLL.Guardar(presupuesto);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Guardado !');</script> ");
                 LimpiarTextBox();
-                FechaTextBox1.Focus();
+               
 
             }
         }
@@ -90,6 +92,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             else
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('No Existe!');</script> ");
+                LimpiarTextBox();
             }
         }
 
@@ -102,10 +105,12 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             {
                 BLL.PresupuestoBLL.Eliminar(presupuesto);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Eliminado!');</script> ");
+                LimpiarTextBox();
             }
             else
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('No Existe!');</script> ");
+                LimpiarTextBox();
             }
         }
     }

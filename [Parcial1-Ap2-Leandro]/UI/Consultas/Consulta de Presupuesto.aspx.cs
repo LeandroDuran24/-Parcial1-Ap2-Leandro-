@@ -10,7 +10,9 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
 {
     public partial class Consulta_de_Prestamos : System.Web.UI.Page
     {
+        //lista en donde almaceno la informacion que me trae el filtro para pasarla al reporte
         public static List<Presupuesto> lista { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Presupuesto presupuesto = new Presupuesto();
@@ -20,19 +22,19 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
             GridView1.DataBind();
         }
 
+        //funcion en donde dependiendo del items que seleccione hace su funcion por el filtro requerido
         public void SeleccionarItem()
         {
             if (DropDownListPresupuesto.SelectedIndex == 0)
             {
                 int id = Convert.ToInt32(TextBox1.Text);
                 lista = BLL.PresupuestoBLL.GetList(p => p.PresupuestoId == id);
-                GridView1.DataSource = lista;
-                GridView1.DataBind();
+               
             }
-            
+
             else if (DropDownListPresupuesto.SelectedIndex == 1)
             {
-                
+
 
                 if (desdeFecha.Text != "" && hastaFecha.Text != "")
                 {
@@ -41,8 +43,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
                     if (desde <= hasta)
                     {
                         lista = BLL.PresupuestoBLL.GetList(p => p.Fecha >= desde && p.Fecha <= hasta);
-                        GridView1.DataSource = lista;
-                        GridView1.DataBind();
+                        
                     }
                     else
                     {
@@ -73,6 +74,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
             GridView1.DataBind();
         }
 
+        //Boton buscar que llama la funcion de Seleccionar Items del comboBox
         protected void ButtonBuscar_Click(object sender, EventArgs e)
         {
             SeleccionarItem();

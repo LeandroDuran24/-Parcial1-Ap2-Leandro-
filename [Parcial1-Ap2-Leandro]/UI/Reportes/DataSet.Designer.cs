@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
+namespace _Parcial1_Ap2_Leandro_.UI.Reportes {
     
     
     /// <summary>
@@ -24,7 +24,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DataSet : global::System.Data.DataSet {
         
-        private PresupuestoesDataTable tablePresupuestoes;
+        private PresupuestosDataTable tablePresupuestos;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Presupuestoes"] != null)) {
-                    base.Tables.Add(new PresupuestoesDataTable(ds.Tables["Presupuestoes"]));
+                if ((ds.Tables["Presupuestos"] != null)) {
+                    base.Tables.Add(new PresupuestosDataTable(ds.Tables["Presupuestos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public PresupuestoesDataTable Presupuestoes {
+        public PresupuestosDataTable Presupuestos {
             get {
-                return this.tablePresupuestoes;
+                return this.tablePresupuestos;
             }
         }
         
@@ -152,8 +152,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Presupuestoes"] != null)) {
-                    base.Tables.Add(new PresupuestoesDataTable(ds.Tables["Presupuestoes"]));
+                if ((ds.Tables["Presupuestos"] != null)) {
+                    base.Tables.Add(new PresupuestosDataTable(ds.Tables["Presupuestos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablePresupuestoes = ((PresupuestoesDataTable)(base.Tables["Presupuestoes"]));
+            this.tablePresupuestos = ((PresupuestosDataTable)(base.Tables["Presupuestos"]));
             if ((initTable == true)) {
-                if ((this.tablePresupuestoes != null)) {
-                    this.tablePresupuestoes.InitVars();
+                if ((this.tablePresupuestos != null)) {
+                    this.tablePresupuestos.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             this.Namespace = "http://tempuri.org/DataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablePresupuestoes = new PresupuestoesDataTable();
-            base.Tables.Add(this.tablePresupuestoes);
+            this.tablePresupuestos = new PresupuestosDataTable();
+            base.Tables.Add(this.tablePresupuestos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializePresupuestoes() {
+        private bool ShouldSerializePresupuestos() {
             return false;
         }
         
@@ -270,14 +270,14 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void PresupuestoesRowChangeEventHandler(object sender, PresupuestoesRowChangeEvent e);
+        public delegate void PresupuestosRowChangeEventHandler(object sender, PresupuestosRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PresupuestoesDataTable : global::System.Data.TypedTableBase<PresupuestoesRow> {
+        public partial class PresupuestosDataTable : global::System.Data.TypedTableBase<PresupuestosRow> {
             
             private global::System.Data.DataColumn columnPresupuestoId;
             
@@ -289,8 +289,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PresupuestoesDataTable() {
-                this.TableName = "Presupuestoes";
+            public PresupuestosDataTable() {
+                this.TableName = "Presupuestos";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +298,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal PresupuestoesDataTable(global::System.Data.DataTable table) {
+            internal PresupuestosDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,7 +315,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected PresupuestoesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected PresupuestosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -363,55 +363,55 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PresupuestoesRow this[int index] {
+            public PresupuestosRow this[int index] {
                 get {
-                    return ((PresupuestoesRow)(this.Rows[index]));
+                    return ((PresupuestosRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event PresupuestoesRowChangeEventHandler PresupuestoesRowChanging;
+            public event PresupuestosRowChangeEventHandler PresupuestosRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event PresupuestoesRowChangeEventHandler PresupuestoesRowChanged;
+            public event PresupuestosRowChangeEventHandler PresupuestosRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event PresupuestoesRowChangeEventHandler PresupuestoesRowDeleting;
+            public event PresupuestosRowChangeEventHandler PresupuestosRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event PresupuestoesRowChangeEventHandler PresupuestoesRowDeleted;
+            public event PresupuestosRowChangeEventHandler PresupuestosRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddPresupuestoesRow(PresupuestoesRow row) {
+            public void AddPresupuestosRow(PresupuestosRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PresupuestoesRow AddPresupuestoesRow(System.DateTime Fecha, string Descripcion, double Monto) {
-                PresupuestoesRow rowPresupuestoesRow = ((PresupuestoesRow)(this.NewRow()));
+            public PresupuestosRow AddPresupuestosRow(System.DateTime Fecha, string Descripcion, double Monto) {
+                PresupuestosRow rowPresupuestosRow = ((PresupuestosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Fecha,
                         Descripcion,
                         Monto};
-                rowPresupuestoesRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPresupuestoesRow);
-                return rowPresupuestoesRow;
+                rowPresupuestosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPresupuestosRow);
+                return rowPresupuestosRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PresupuestoesRow FindByPresupuestoId(int PresupuestoId) {
-                return ((PresupuestoesRow)(this.Rows.Find(new object[] {
+            public PresupuestosRow FindByPresupuestoId(int PresupuestoId) {
+                return ((PresupuestosRow)(this.Rows.Find(new object[] {
                             PresupuestoId})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                PresupuestoesDataTable cln = ((PresupuestoesDataTable)(base.Clone()));
+                PresupuestosDataTable cln = ((PresupuestosDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -419,7 +419,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new PresupuestoesDataTable();
+                return new PresupuestosDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -450,35 +450,33 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
                 this.columnPresupuestoId.AllowDBNull = false;
                 this.columnPresupuestoId.ReadOnly = true;
                 this.columnPresupuestoId.Unique = true;
-                this.columnFecha.AllowDBNull = false;
-                this.columnDescripcion.MaxLength = 2147483647;
-                this.columnMonto.AllowDBNull = false;
+                this.columnDescripcion.MaxLength = 150;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PresupuestoesRow NewPresupuestoesRow() {
-                return ((PresupuestoesRow)(this.NewRow()));
+            public PresupuestosRow NewPresupuestosRow() {
+                return ((PresupuestosRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new PresupuestoesRow(builder);
+                return new PresupuestosRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(PresupuestoesRow);
+                return typeof(PresupuestosRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.PresupuestoesRowChanged != null)) {
-                    this.PresupuestoesRowChanged(this, new PresupuestoesRowChangeEvent(((PresupuestoesRow)(e.Row)), e.Action));
+                if ((this.PresupuestosRowChanged != null)) {
+                    this.PresupuestosRowChanged(this, new PresupuestosRowChangeEvent(((PresupuestosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -486,8 +484,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.PresupuestoesRowChanging != null)) {
-                    this.PresupuestoesRowChanging(this, new PresupuestoesRowChangeEvent(((PresupuestoesRow)(e.Row)), e.Action));
+                if ((this.PresupuestosRowChanging != null)) {
+                    this.PresupuestosRowChanging(this, new PresupuestosRowChangeEvent(((PresupuestosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -495,8 +493,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.PresupuestoesRowDeleted != null)) {
-                    this.PresupuestoesRowDeleted(this, new PresupuestoesRowChangeEvent(((PresupuestoesRow)(e.Row)), e.Action));
+                if ((this.PresupuestosRowDeleted != null)) {
+                    this.PresupuestosRowDeleted(this, new PresupuestosRowChangeEvent(((PresupuestosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -504,14 +502,14 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.PresupuestoesRowDeleting != null)) {
-                    this.PresupuestoesRowDeleting(this, new PresupuestoesRowChangeEvent(((PresupuestoesRow)(e.Row)), e.Action));
+                if ((this.PresupuestosRowDeleting != null)) {
+                    this.PresupuestosRowDeleting(this, new PresupuestosRowChangeEvent(((PresupuestosRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemovePresupuestoesRow(PresupuestoesRow row) {
+            public void RemovePresupuestosRow(PresupuestosRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -538,7 +536,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "PresupuestoesDataTable";
+                attribute2.FixedValue = "PresupuestosDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -582,25 +580,25 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class PresupuestoesRow : global::System.Data.DataRow {
+        public partial class PresupuestosRow : global::System.Data.DataRow {
             
-            private PresupuestoesDataTable tablePresupuestoes;
+            private PresupuestosDataTable tablePresupuestos;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal PresupuestoesRow(global::System.Data.DataRowBuilder rb) : 
+            internal PresupuestosRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablePresupuestoes = ((PresupuestoesDataTable)(this.Table));
+                this.tablePresupuestos = ((PresupuestosDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public int PresupuestoId {
                 get {
-                    return ((int)(this[this.tablePresupuestoes.PresupuestoIdColumn]));
+                    return ((int)(this[this.tablePresupuestos.PresupuestoIdColumn]));
                 }
                 set {
-                    this[this.tablePresupuestoes.PresupuestoIdColumn] = value;
+                    this[this.tablePresupuestos.PresupuestoIdColumn] = value;
                 }
             }
             
@@ -608,10 +606,15 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public System.DateTime Fecha {
                 get {
-                    return ((global::System.DateTime)(this[this.tablePresupuestoes.FechaColumn]));
+                    try {
+                        return ((global::System.DateTime)(this[this.tablePresupuestos.FechaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Fecha\' in table \'Presupuestos\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablePresupuestoes.FechaColumn] = value;
+                    this[this.tablePresupuestos.FechaColumn] = value;
                 }
             }
             
@@ -620,14 +623,14 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             public string Descripcion {
                 get {
                     try {
-                        return ((string)(this[this.tablePresupuestoes.DescripcionColumn]));
+                        return ((string)(this[this.tablePresupuestos.DescripcionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Descripcion\' in table \'Presupuestoes\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Descripcion\' in table \'Presupuestos\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePresupuestoes.DescripcionColumn] = value;
+                    this[this.tablePresupuestos.DescripcionColumn] = value;
                 }
             }
             
@@ -635,23 +638,52 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public double Monto {
                 get {
-                    return ((double)(this[this.tablePresupuestoes.MontoColumn]));
+                    try {
+                        return ((double)(this[this.tablePresupuestos.MontoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Monto\' in table \'Presupuestos\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablePresupuestoes.MontoColumn] = value;
+                    this[this.tablePresupuestos.MontoColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsFechaNull() {
+                return this.IsNull(this.tablePresupuestos.FechaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetFechaNull() {
+                this[this.tablePresupuestos.FechaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsDescripcionNull() {
-                return this.IsNull(this.tablePresupuestoes.DescripcionColumn);
+                return this.IsNull(this.tablePresupuestos.DescripcionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetDescripcionNull() {
-                this[this.tablePresupuestoes.DescripcionColumn] = global::System.Convert.DBNull;
+                this[this.tablePresupuestos.DescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsMontoNull() {
+                return this.IsNull(this.tablePresupuestos.MontoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetMontoNull() {
+                this[this.tablePresupuestos.MontoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -659,22 +691,22 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class PresupuestoesRowChangeEvent : global::System.EventArgs {
+        public class PresupuestosRowChangeEvent : global::System.EventArgs {
             
-            private PresupuestoesRow eventRow;
+            private PresupuestosRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PresupuestoesRowChangeEvent(PresupuestoesRow row, global::System.Data.DataRowAction action) {
+            public PresupuestosRowChangeEvent(PresupuestosRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PresupuestoesRow Row {
+            public PresupuestosRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -690,7 +722,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes {
         }
     }
 }
-namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
+namespace _Parcial1_Ap2_Leandro_.UI.Reportes.DataSetTableAdapters {
     
     
     /// <summary>
@@ -702,7 +734,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class PresupuestoesTableAdapter : global::System.ComponentModel.Component {
+    public partial class PresupuestosTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -716,7 +748,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public PresupuestoesTableAdapter() {
+        public PresupuestosTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -813,7 +845,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Presupuestoes";
+            tableMapping.DataSetTable = "Presupuestos";
             tableMapping.ColumnMappings.Add("PresupuestoId", "PresupuestoId");
             tableMapping.ColumnMappings.Add("Fecha", "Fecha");
             tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
@@ -821,25 +853,25 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Presupuestoes] WHERE (([PresupuestoId] = @Original_Presupuesto" +
-                "Id))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Presupuestos] WHERE (([PresupuestoId] = @Original_PresupuestoI" +
+                "d))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PresupuestoId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PresupuestoId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Presupuestoes] ([Fecha], [Descripcion], [Monto]) VALUES (@Fech" +
-                "a, @Descripcion, @Monto)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Presupuestos] ([Fecha], [Descripcion], [Monto]) VALUES (@Fecha" +
+                ", @Descripcion, @Monto)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Monto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Monto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Presupuestoes] SET [Fecha] = @Fecha, [Descripcion] = @Descripcion, " +
-                "[Monto] = @Monto WHERE (([PresupuestoId] = @Original_PresupuestoId))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Presupuestos] SET [Fecha] = @Fecha, [Descripcion] = @Descripcion, [" +
+                "Monto] = @Monto WHERE (([PresupuestoId] = @Original_PresupuestoId))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Monto", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Monto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PresupuestoId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PresupuestoId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
@@ -857,7 +889,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT PresupuestoId, Fecha, Descripcion, Monto FROM dbo.Presupuestoes";
+            this._commandCollection[0].CommandText = "SELECT PresupuestoId, Fecha, Descripcion, Monto FROM dbo.Presupuestos";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -865,7 +897,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.PresupuestoesDataTable dataTable) {
+        public virtual int Fill(DataSet.PresupuestosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -878,9 +910,9 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.PresupuestoesDataTable GetData() {
+        public virtual DataSet.PresupuestosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.PresupuestoesDataTable dataTable = new DataSet.PresupuestoesDataTable();
+            DataSet.PresupuestosDataTable dataTable = new DataSet.PresupuestosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -888,7 +920,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.PresupuestoesDataTable dataTable) {
+        public virtual int Update(DataSet.PresupuestosDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -896,7 +928,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Presupuestoes");
+            return this.Adapter.Update(dataSet, "Presupuestos");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -940,15 +972,25 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime Fecha, string Descripcion, double Monto) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(Fecha));
+        public virtual int Insert(global::System.Nullable<global::System.DateTime> Fecha, string Descripcion, global::System.Nullable<double> Monto) {
+            if ((Fecha.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(Fecha.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             if ((Descripcion == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Descripcion));
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((double)(Monto));
+            if ((Monto.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((double)(Monto.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -969,15 +1011,25 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime Fecha, string Descripcion, double Monto, int Original_PresupuestoId) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(Fecha));
+        public virtual int Update(global::System.Nullable<global::System.DateTime> Fecha, string Descripcion, global::System.Nullable<double> Monto, int Original_PresupuestoId) {
+            if ((Fecha.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(Fecha.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             if ((Descripcion == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Descripcion));
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(Monto));
+            if ((Monto.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(Monto.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_PresupuestoId));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1008,7 +1060,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private PresupuestoesTableAdapter _presupuestoesTableAdapter;
+        private PresupuestosTableAdapter _presupuestosTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1030,12 +1082,12 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public PresupuestoesTableAdapter PresupuestoesTableAdapter {
+        public PresupuestosTableAdapter PresupuestosTableAdapter {
             get {
-                return this._presupuestoesTableAdapter;
+                return this._presupuestosTableAdapter;
             }
             set {
-                this._presupuestoesTableAdapter = value;
+                this._presupuestosTableAdapter = value;
             }
         }
         
@@ -1058,9 +1110,9 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._presupuestoesTableAdapter != null) 
-                            && (this._presupuestoesTableAdapter.Connection != null))) {
-                    return this._presupuestoesTableAdapter.Connection;
+                if (((this._presupuestosTableAdapter != null) 
+                            && (this._presupuestosTableAdapter.Connection != null))) {
+                    return this._presupuestosTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1075,7 +1127,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._presupuestoesTableAdapter != null)) {
+                if ((this._presupuestosTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1089,12 +1141,12 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateUpdatedRows(DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._presupuestoesTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Presupuestoes.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._presupuestosTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Presupuestos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._presupuestoesTableAdapter.Update(updatedRows));
+                    result = (result + this._presupuestosTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1108,11 +1160,11 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateInsertedRows(DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._presupuestoesTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Presupuestoes.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._presupuestosTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Presupuestos.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._presupuestoesTableAdapter.Update(addedRows));
+                    result = (result + this._presupuestosTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1126,11 +1178,11 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private int UpdateDeletedRows(DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._presupuestoesTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Presupuestoes.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._presupuestosTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Presupuestos.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._presupuestoesTableAdapter.Update(deletedRows));
+                    result = (result + this._presupuestosTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1173,8 +1225,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._presupuestoesTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._presupuestoesTableAdapter.Connection) == false))) {
+            if (((this._presupuestosTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._presupuestosTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1210,13 +1262,13 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._presupuestoesTableAdapter != null)) {
-                    revertConnections.Add(this._presupuestoesTableAdapter, this._presupuestoesTableAdapter.Connection);
-                    this._presupuestoesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._presupuestoesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._presupuestoesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._presupuestoesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._presupuestoesTableAdapter.Adapter);
+                if ((this._presupuestosTableAdapter != null)) {
+                    revertConnections.Add(this._presupuestosTableAdapter, this._presupuestosTableAdapter.Connection);
+                    this._presupuestosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._presupuestosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._presupuestosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._presupuestosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._presupuestosTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1277,9 +1329,9 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros.Reportes.DataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._presupuestoesTableAdapter != null)) {
-                    this._presupuestoesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._presupuestoesTableAdapter]));
-                    this._presupuestoesTableAdapter.Transaction = null;
+                if ((this._presupuestosTableAdapter != null)) {
+                    this._presupuestosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._presupuestosTableAdapter]));
+                    this._presupuestosTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
