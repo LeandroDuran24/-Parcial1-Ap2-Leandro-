@@ -1,0 +1,54 @@
+﻿
+.page-header {
+    color: black; /*color*/
+    /*text-decoration: underline; subrayado*/
+    text-transform: capitalize;
+    font-size: 44px;
+    font-weight: bold; /*negrita*/
+}
+
+.label {
+    color: black;
+    font-size: 20px;
+}
+.boton {
+    background: #ffffff;
+    color: black;
+    font-size: 16px; /*tamano de letra*/
+    padding: 10px 24px; /*largo y ancho*/
+    border-radius: 8px;
+    border: 2px solid #0026ff;
+    cursor: pointer;
+}
+
+.boton-buscar {
+    background: #ffffff;
+    color: black;
+    font-size: 16px; /*tamano de letra*/
+    padding: 7px 18px; /*largo y ancho*/
+    border-radius: 8px;
+    border: 2px solid #0026ff;
+    cursor: pointer;
+   
+}
+
+.page-footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    background-color: gray;
+    font-size: 14px;
+}
+
+.grid
+{
+    text-align:right;
+}
+
+.footer_Consulta {
+   
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 205px;
+}

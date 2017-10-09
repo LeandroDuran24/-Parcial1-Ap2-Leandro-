@@ -26,9 +26,9 @@ namespace BLL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Leandro Duran\\Deskt" +
-            "op\\Parcial1-AP2-Leandro\\[Parcial1-Ap2-Leandro]\\[Parcial1-Ap2-Leandro]\\Base de Da" +
-            "tos\\Parcial1Db.mdf\";Integrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Leandro UCNE\\Aplicada 2\\P" +
+            "arcial1-AP2-Leandro\\[Parcial1-Ap2-Leandro]\\[Parcial1-Ap2-Leandro]\\Base de Datos\\" +
+            "Parcial1Db.mdf\";Integrated Security=True;Connect Timeout=30")]
         public string ConStr {
             get {
                 return ((string)(this["ConStr"]));

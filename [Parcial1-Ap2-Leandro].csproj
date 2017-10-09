@@ -107,6 +107,8 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Content Include="Base de Datos\Parcial1Db.mdf" />
+    <Content Include="UI\Consultas\ConsultaCategoria.aspx" />
+    <Content Include="UI\Registros\Categorias.aspx" />
     <Content Include="UI\Reportes\DataSet.xsc">
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Content>
@@ -133,9 +135,7 @@
     <Content Include="UI\Registros\Menu.aspx" />
     <Content Include="UI\Registros\Registro Presupuesto.aspx" />
     <Content Include="UI\Reportes\Reporte Presupuesto.aspx" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -153,6 +153,20 @@
     </Compile>
     <Compile Include="UI\Consultas\Consulta de Presupuesto.aspx.designer.cs">
       <DependentUpon>Consulta de Presupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaCategoria.aspx.cs">
+      <DependentUpon>ConsultaCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaCategoria.aspx.designer.cs">
+      <DependentUpon>ConsultaCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\Categorias.aspx.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\Categorias.aspx.designer.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>

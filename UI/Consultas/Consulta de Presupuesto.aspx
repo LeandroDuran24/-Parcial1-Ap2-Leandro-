@@ -28,6 +28,9 @@
                         <li><a href="../Registros/Menu.aspx"><span class="glyphicon glyphicon-home">Inicio&nbsp</span></a></li>
                         <li><a href="../Registros/Registro Presupuesto.aspx"><span class="glyphicon glyphicon-usd">Registro de Prestamos&nbsp</span></a></li>
                         <li class="active"><a href="Consulta de Presupuesto.aspx"><span class="glyphicon glyphicon-search">Consulta de Prestamos</span></a></li>
+                        <li><a href="../Registros/Categorias.aspx"><span class="glyphicon glyphicon-usd">Registro de Categorias&nbsp</span></a></li>
+                        <li ><a href="ConsultaCategoria.aspx"><span class="glyphicon glyphicon-search">Consulta de Categorias</span></a></li>
+
                         &nbsp&nbsp&nbsp
 
                    <ul />
@@ -84,21 +87,19 @@
         <br />
         <!--tabla donde se va mostrar el contenido filtrado-->
         <div class="text-center">
-            
-            <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="GridView1" CssClass="text-center" runat="server" CaptionAlign="Bottom" HorizontalAlign="Center" Height="18px" Width="510px" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                <RowStyle BackColor="#EFF3FB" />
+                <HeaderStyle BackColor="#507CD1" BorderColor="Black" BorderStyle="Double" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#2461BF" BorderColor="White" BorderStyle="Double" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EFF3FB" BorderColor="Black" BorderStyle="Double" />
                 <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
                 <SortedAscendingCellStyle BackColor="#F5F7FB" />
                 <SortedAscendingHeaderStyle BackColor="#6D95E1" />
                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
-            
         </div>
 
 

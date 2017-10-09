@@ -15,5 +15,7 @@ namespace DAL
 
         }
         public DbSet<Presupuesto> presupuesto { get; set; }
+        public DbSet<Categoria> categoria { get; set; }
+        
     }
 }

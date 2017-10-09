@@ -4,3 +4,7 @@ Fecha datetime,
 Descripcion varchar(150),
 Monto float
 );
+
+create table Categorias(
+idCategoria int identity(1,1) primary key,
+Categoria varchar(50));
