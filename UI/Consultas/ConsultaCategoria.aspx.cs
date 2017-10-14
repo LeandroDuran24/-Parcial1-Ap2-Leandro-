@@ -25,7 +25,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Consultas
             if (DropDownListCategoria.SelectedIndex == 0)
             {
                 int id = Convert.ToInt32(TextBox1.Text);
-                lista = BLL.CategoriaBLL.GetList(p => p.idCategoria == id);
+                lista = BLL.CategoriaBLL.GetList(p => p.CategoriaId == id);
 
             }
 

@@ -29,11 +29,13 @@
                         <li><a href="../Registros/Registro Presupuesto.aspx"><span class="glyphicon glyphicon-usd">Registro de Prestamos&nbsp</span></a></li>
                         <li class="active"><a href="Consulta de Presupuesto.aspx"><span class="glyphicon glyphicon-search">Consulta de Prestamos</span></a></li>
                         <li><a href="../Registros/Categorias.aspx"><span class="glyphicon glyphicon-usd">Registro de Categorias&nbsp</span></a></li>
-                        <li ><a href="ConsultaCategoria.aspx"><span class="glyphicon glyphicon-search">Consulta de Categorias</span></a></li>
+                        <li><a href="ConsultaCategoria.aspx"><span class="glyphicon glyphicon-search">Consulta de Categorias</span></a></li>
 
                         &nbsp&nbsp&nbsp
 
-                   <ul />
+                  
+
+                        <ul />
                 </div>
 
             </nav>
@@ -54,12 +56,17 @@
                         <asp:ListItem>Id</asp:ListItem>
                         <asp:ListItem>Fecha</asp:ListItem>
                         <asp:ListItem>Todos</asp:ListItem>
+                        <asp:ListItem>Seleccionar Por Categoria</asp:ListItem>
                     </asp:DropDownList>
                     &nbsp
 
+                   
+
                     <!--boton buscar-->
-                    <asp:TextBox ID="TextBox1" runat="server" Width="150px" MaxLength="50"></asp:TextBox>
-                    <asp:Button ID="ButtonBuscar" CssClass="boton-buscar" runat="server" Text="Filtrar" OnClick="ButtonBuscar_Click" />
+                    <asp:TextBox ID="TextBox1" runat="server" Width="150px" MaxLength="50"  ValidationGroup="buscar"></asp:TextBox>
+                    <asp:Button ID="ButtonBuscar" CssClass="boton-buscar" runat="server" Text="Filtrar" OnClick="ButtonBuscar_Click" ValidationGroup="buscar" />
+
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" Font-Bold="True" Font-Size="15pt" ForeColor="Red" ValidationGroup="buscar" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
 
                 </div>
 
@@ -80,38 +87,31 @@
             </div>
         </div>
 
-
-
-        <br />
-        <br />
-        <br />
         <!--tabla donde se va mostrar el contenido filtrado-->
-        <div class="text-center">
-            <asp:GridView ID="GridView1" CssClass="text-center" runat="server" CaptionAlign="Bottom" HorizontalAlign="Center" Height="18px" Width="510px" CellPadding="4" ForeColor="#333333" GridLines="None">
-                <AlternatingRowStyle BackColor="White" />
-                <EditRowStyle BackColor="#2461BF" />
-                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#507CD1" BorderColor="Black" BorderStyle="Double" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#2461BF" BorderColor="White" BorderStyle="Double" ForeColor="White" HorizontalAlign="Center" />
-                <RowStyle BackColor="#EFF3FB" BorderColor="Black" BorderStyle="Double" />
-                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-                <SortedAscendingCellStyle BackColor="#F5F7FB" />
-                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-                <SortedDescendingCellStyle BackColor="#E9EBEF" />
-                <SortedDescendingHeaderStyle BackColor="#4870BE" />
-            </asp:GridView>
+        <div class="text-center align-content-center">
+            <div style="overflow: auto; width: 1100px; height: 315px;">
+                <asp:GridView ID="GridView1" CssClass="text-center" runat="server" CaptionAlign="Bottom" HorizontalAlign="Center" Height="85px" Width="1094px" CellPadding="0" ForeColor="#333333" GridLines="None" PageSize="2" PageIndex="2">
+                    <AlternatingRowStyle BackColor="White" />
+                    <EditRowStyle BackColor="#2461BF" />
+                    <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#507CD1" BorderColor="Black" BorderStyle="Double" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#2461BF" BorderColor="White" BorderStyle="Double" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#EFF3FB" BorderColor="Black" BorderStyle="Double" />
+                    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                    <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                    <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                    <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                </asp:GridView>
+            </div>
         </div>
-
-
-        <br />
-        <br />
         <br />
         <br />
 
         <!--footer-->
         <footer>
 
-            <p class="page-footer text-center " >[Parcial 1 Aplicada 2 Leandro Rafael]</p>
+            <p class="page-footer text-center ">[Parcial 1 Aplicada 2 Leandro Rafael]</p>
 
         </footer>
 

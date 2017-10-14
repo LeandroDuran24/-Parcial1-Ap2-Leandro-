@@ -2,9 +2,10 @@
 PresupuestoId int identity(1,1) primary key,
 Fecha datetime,
 Descripcion varchar(150),
+CategoriaId int foreign key references Categorias(CategoriaId),
 Monto float
 );
 
 create table Categorias(
-idCategoria int identity(1,1) primary key,
+CategoriaId int identity(1,1) primary key,
 Categoria varchar(50));

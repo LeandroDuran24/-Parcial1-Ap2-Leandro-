@@ -36,6 +36,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             RequiredFieldValidator2.Text = "";
             RequiredFieldValidator3.Text = "";
             RequiredFieldValidator4.Text = "";
+            DropDownList1.Text = "";
             FechaTextBox1.Focus();
 
 
@@ -49,7 +50,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             presupuesto.Descripcion = DescripcionTextBox1.Text;
             presupuesto.Fecha = Convert.ToDateTime(FechaTextBox1.Text);
             presupuesto.Monto = Convert.ToDouble(MontoTextBox1.Text);
-            presupuesto.Categoria = DropDownList1.Text;
+            presupuesto.CategoriaId =Utilidades.TOINT(DropDownList1.SelectedValue.ToString());
             return presupuesto;
         }
 
@@ -57,11 +58,12 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
         {
             List<Categoria> lista = BLL.CategoriaBLL.GetListTodo();
             DropDownList1.DataSource = lista;
-            DropDownList1.DataTextField = "Categorias";
-            DropDownList1.DataValueField = "idCategoria";
+            DropDownList1.DataTextField = "Nombre";
+            DropDownList1.DataValueField = "CategoriaId";
             DropDownList1.DataBind();
 
-
+          
+           
         }
 
 
@@ -106,6 +108,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
                     FechaTextBox1.Text = Convert.ToString(presupuesto.Fecha);
                     DescripcionTextBox1.Text = presupuesto.Descripcion;
                     MontoTextBox1.Text = Convert.ToString(presupuesto.Monto);
+                    DropDownList1.Text = Convert.ToString(presupuesto.CategoriaId);
                 }
                 else
                 {

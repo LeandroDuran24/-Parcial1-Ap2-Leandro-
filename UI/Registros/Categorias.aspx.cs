@@ -33,8 +33,8 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
 
         public Categoria LLenar()
         {
-           cat.idCategoria= Utilidades.TOINT(IdTextBox.Text);
-            cat.Categorias = CaracteristicaTextBox1.Text;
+           cat.CategoriaId= Utilidades.TOINT(IdTextBox.Text);
+            cat.Nombre = CaracteristicaTextBox1.Text;
 
             return cat;
         }
@@ -43,14 +43,14 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
         {
 
             int id = Convert.ToInt32(IdTextBox.Text);
-            cat = BLL.CategoriaBLL.Buscar(p => p.idCategoria == id);
+            cat = BLL.CategoriaBLL.Buscar(p => p.CategoriaId == id);
             if (IsValid)
 
             {
                 if (cat != null)
                 {
                    
-                    CaracteristicaTextBox1.Text = cat.Categorias;
+                    CaracteristicaTextBox1.Text = cat.Nombre;
                     
                 }
                 else
@@ -72,7 +72,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
             if (IsValid)
             {
                 cat = LLenar();
-                if (cat.idCategoria != 0)
+                if (cat.CategoriaId != 0)
                 {
 
                     BLL.CategoriaBLL.Mofidicar(cat);
@@ -93,7 +93,7 @@ namespace _Parcial1_Ap2_Leandro_.UI.Registros
         protected void Eliminar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(IdTextBox.Text);
-            cat = BLL.CategoriaBLL.Buscar(p => p.idCategoria == id);
+            cat = BLL.CategoriaBLL.Buscar(p => p.CategoriaId == id);
 
             if (cat != null)
             {
