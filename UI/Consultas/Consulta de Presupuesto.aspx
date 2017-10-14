@@ -66,8 +66,6 @@
                     <asp:TextBox ID="TextBox1" runat="server" Width="150px" MaxLength="50"  ValidationGroup="buscar"></asp:TextBox>
                     <asp:Button ID="ButtonBuscar" CssClass="boton-buscar" runat="server" Text="Filtrar" OnClick="ButtonBuscar_Click" ValidationGroup="buscar" />
 
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" Font-Bold="True" Font-Size="15pt" ForeColor="Red" ValidationGroup="buscar" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
-
                 </div>
 
                 <!--fecha-->
@@ -78,7 +76,8 @@
                         <label for="hasta">Hasta</label>
                         <asp:TextBox ID="hastaFecha" runat="server" Width="120px" MaxLength="15"></asp:TextBox>
                         <!--boton Imprimir Reporte-->
-                        <a id="Reporte" href="../Reportes/Reporte Presupuesto.aspx" class="boton-buscar">Imprimir</a>
+                        <asp:Button ID="Button1" runat="server" Text="Imprimir" CssClass="boton-buscar" OnClick="Button1_Click" />
+                        <%--<a id="Reporte" href="../Reportes/Reporte Presupuesto.aspx" class="boton-buscar">Imprimir</a>--%>
 
                     </p>
 
